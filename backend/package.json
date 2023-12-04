@@ -1,0 +1,33 @@
+{
+  "name": "unsplash-backend",
+  "version": "1.0.0",
+  "description": "Backend to fetch with unsplash-js and serve images to frontend",
+  "main": "server.js",
+  "scripts": {
+    "watch": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "babel src --out-dir dist && node dist/index.js"
+  },
+  "keywords": [
+    "unsplash"
+  ],
+  "author": "Prathamesh Kulkarni",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/register": "^7.9.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "unsplash-js": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.3"
+  }
+}
